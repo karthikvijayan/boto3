@@ -42,7 +42,7 @@ setup(
     },
     include_package_data=True,
     install_requires=requires,
-    dependency_links=['https://github.com/karthikvijayan/botocore/tarball/master#egg=botocore-1.8.0']
+    dependency_links=['https://github.com/karthikvijayan/botocore/tarball/master#egg=botocore-1.8.0'],
     license="Apache License 2.0",
     classifiers=[
         'Development Status :: 5 - Production/Stable',
