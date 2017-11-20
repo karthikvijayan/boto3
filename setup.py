@@ -14,7 +14,7 @@ VERSION_RE = re.compile(r'''__version__ = ['"]([0-9.]+)['"]''')
 
 
 requires = [
-    'botocore>=git+git://github.com/karthikvijayan/botocore.git',
+    'botocore>=1.7.0,<1.8.0',
     'jmespath>=0.7.1,<1.0.0',
     's3transfer>=0.1.10,<0.2.0'
 ]
@@ -42,6 +42,7 @@ setup(
     },
     include_package_data=True,
     install_requires=requires,
+    dependency_links=['https://github.com/karthikvijayan/botocore/tarball/master#egg=botocore-1.8.0']
     license="Apache License 2.0",
     classifiers=[
         'Development Status :: 5 - Production/Stable',
